@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
   margin: 0;
@@ -67,11 +68,14 @@
 /* || GENERAL STYLES */
 
 body {
-  font-family:'Arial', 'sans-serif';
-  min-height: auto;
+  /* font-family:'Arial', 'sans-serif'; */
+  font-family:'Times New Roman', Times, serif;
+  height: auto;
+  width: auto;
   color: var(--COLOR);
   background-image: url('./img/background.jpg');
-  background-position:unset;
+  /* background-position:unset; */
+  background-size: cover;
 }
 
 input,
@@ -125,27 +129,50 @@ a:focus-visible {
 }
 
 .public {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family:'Times New Roman', Times, serif;
   place-content: center;
   display: flex;
 }
 .public_headline{
-  padding-left: 10px;
+  /* padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 40px;
   text-shadow: 2px 2px 4px rgba(22, 148, 233, 0.5);
-  color: #89aef7;
+  color: #89aef7; */
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(to bottom left, #6b37fa, #d3d5ee);;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .public_detail-line{
-  padding-left: 10px;
+  /* padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   text-shadow: 2px 2px 4px rgba(12, 147, 231, 0.5);
   color: #afbfde;
-  bottom: 2rem;
+  bottom: 2rem; */
   
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* background-image: linear-gradient(to bottom left, #cfd7e9, #0c0e10); */
+  background-image:linear-gradient(45deg, #9ea1a9, #09345f);
+  color: transparent;
+  background-clip: text;
+  bottom: 2rem;
+  -webkit-background-clip: text;
 }
 .employee-login{
   padding: 1rem;
@@ -198,7 +225,8 @@ a:focus-visible {
   position: sticky;
   bottom: 0;
   z-index: 1;
-  background-color: var(--BGCOLOR);
+  /* background-color: var(--BGCOLOR); */
+  background-color:#8e69f3;
   padding: 0.5em;
   border-top: 1px none var(--BORDER-COLOR);
   display: flex;

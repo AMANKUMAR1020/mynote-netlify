@@ -4,8 +4,12 @@ const Public = () => {
 
     const content = (
         <section className="public">
-            <main><h1 className='public_headline'>Organize, Collaborate, and Empower Your Workflow with MyNote!</h1>
-            <p className='public_detail-line'>Streamline your note-taking process with NoteCategorize, the ultimate note-making website that allows you to effortlessly categorize and manage your notes based on your role - admin, manager, or employee. Stay organized, collaborate seamlessly, and boost productivity with NoteCategorize!</p>
+            <main><h1 className='public_headline'>Create assingments and notes for your manager and employee with Your Workflow with MyNote!</h1>
+            <p className='public_detail-line'>
+                This Website that allows you to effortlessly categorize and manage your notes based on 
+                your role - admin, manager, or employee.Management and power is distributed based on there role -admin, manager, or employee.
+                <i>"Streamline your note-taking process with NoteCategorize, Stay organized, collaborate seamlessly, 
+                and boost productivity with NoteCategorize!"</i></p>
             <p className='public_detail-line'>For know more about the project please visit My<p className='copy-button' > <a href='https://github.com/AMANKUMAR1020/mynote'>Github Account</a></p></p>
             </main>
             
