@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Mynote Frontend
+### In this, we are used many npm modules ans library of javascript and react.js
+## Overview
+>  In this Web-app, you can create new notes , assignment and users. You can assign this notes your manager and
+employee.
+> 
+> There is three role in this for Employee can only write the notes or assignment , for Manager can create new employee
+and also give assignment to its employee and last Admin which have access to write,delete , create new employee account
+Id and delete any account Id.
+> 
+> In this ,i have used react.js , html, css, for frontend part and mongoDb, express,js, node.js for backend part.
+> 
+> I have also used ’Trust this device’ checkbox and JWT Web-token for encreption and decription purpose and lastly
+redux-tookit for state-manegment purpose.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ *Let discuss the features and working structure of Mynote Frontend*
 
-## Available Scripts
+# Woking
+---
 
-In the project directory, you can run:
+## UserBasedRole :- 
+### Admin :-
+- **Create New Note** They have right to create new Note and ==assign to anyone==.
+- **Terminate User** :- They have full right to terminate the user by ==making inactive or active==.
+- **Update User** :- Have right to update user and their password.
+- **View Notes** :- Admin can easily ==see notes== of all users.
+- **View Users** :- Admin can also see total number of users in the applications.
+        
+### Manager :-
+- **View Users** :- Admin can also see total number of users in the applications.
+- **Update User** :- He can only update his username and their password.
+- **Create New Note** Everyone right to create new Note and assign to anyone even the admin.
+- **View Notes** :- Admin can easily see notes of all users.
+    
+### Employee
+- **Create New Note** Everyone right to create new Note..
+- **View Notes** :- Admin can easily see notes of only created by employees.
+---
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Modules used
+- **fortawesome** : to create icons and svg ,
+- **@reduxjs/toolkit** : To handle a predictable state management library that allows developers to manage and share application state across different components,
+- **jwt-decode** : to decrypt th token coming from server,
+- **dotenv** : Keep safe important uri, passwords, etc,
+- **react-router-dom** : routing path on react components and pages,
+- **express-async-handler** : handling async routing,
+- **react-spinners**: smoother animation during loading time,
+---
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Dillinger requires [React.js](https://react.dev/) v10+ to run.
+Install the dependencies and devDependencies and start the application.
 
-### `npm run build`
+```sh
+cd mynote-netlify
+npm i
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For production environments...
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+npm install --production
+npm run build
+```
+---
+## Helps and links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Instructions on how to use them in your own application are linked below.
 
-### `npm run eject`
+| Name | LINKS |
+| ------ | ------ |
+| mongoDb | [https://www.mongodb.com/][PlDb] |
+| GitHub | [plugins/github/README.md][PlGh] |
+| render .com | [https://dashboard.render.com/static/srv-cjm24o8cfp5c73e23l10][PlGa] | chatgpt .com | [https://chatgpt.com][PlGa] |
+| Grave Dave | [https://www.youtube.com/@DaveGrayTeachesCode/playlists][PlGd] |
+| digitalocean | [https://www.digitalocean.com/][PlOd] |
+| freecodecamp | [https://www.freecodecamp.org/][PlMe] |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
